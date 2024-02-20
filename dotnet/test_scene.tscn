@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy7gwavy0topc"]
+
+[ext_resource type="Script" path="res://dotnet/scripts/TestScene.cs" id="1_hw6ma"]
+[ext_resource type="PackedScene" uid="uid://djg3y5jhh5suo" path="res://dotnet/trigger.tscn" id="2_qlk1o"]
+
+[node name="TestScene" type="Node2D"]
+script = ExtResource("1_hw6ma")
+
+[node name="Trigger" parent="." instance=ExtResource("2_qlk1o")]
+position = Vector2(256, 256)
+
+[node name="Trigger2" parent="." instance=ExtResource("2_qlk1o")]
+position = Vector2(256, -256)
+
+[node name="Trigger3" parent="." instance=ExtResource("2_qlk1o")]
+position = Vector2(-256, -256)
+
+[node name="Trigger4" parent="." instance=ExtResource("2_qlk1o")]
+position = Vector2(-256, 256)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://djg3y5jhh5suo"]
 
-[ext_resource type="Script" path="res://scripts/Trigger.cs" id="1_3yn2p"]
+[ext_resource type="Script" path="res://dotnet/scripts/Trigger.cs" id="1_3yn2p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74464"]
 size = Vector2(512, 512)

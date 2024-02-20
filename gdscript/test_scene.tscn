@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4ji0b68sipvu"]
+
+[ext_resource type="PackedScene" uid="uid://dv1dvk335i8gp" path="res://gdscript/trigger.tscn" id="1_g0bn5"]
+
+[sub_resource type="GDScript" id="GDScript_kwn5v"]
+script/source = "extends Node2D"
+
+[node name="TestScene" type="Node2D"]
+script = SubResource("GDScript_kwn5v")
+
+[node name="Trigger" parent="." instance=ExtResource("1_g0bn5")]
+position = Vector2(256, 256)
+
+[node name="Trigger2" parent="." instance=ExtResource("1_g0bn5")]
+position = Vector2(256, -256)
+
+[node name="Trigger3" parent="." instance=ExtResource("1_g0bn5")]
+position = Vector2(-256, -256)
+
+[node name="Trigger4" parent="." instance=ExtResource("1_g0bn5")]
+position = Vector2(-256, 256)

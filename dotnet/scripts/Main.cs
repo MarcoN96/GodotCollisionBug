@@ -35,7 +35,7 @@ public partial class Main : Node2D
 
 	private void Load()
 	{
-		var testScene = GD.Load<PackedScene>("res://test_scene.tscn");
+		var testScene = GD.Load<PackedScene>("res://dotnet//test_scene.tscn");
 		scene = testScene.Instantiate<TestScene>();
 		AddChild(scene);
 

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv1dvk335i8gp"]
+
+[ext_resource type="Script" path="res://gdscript/scripts/trigger.gd" id="1_xijfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2j7u"]
+size = Vector2(512, 512)
+
+[node name="Trigger" type="Area2D"]
+script = ExtResource("1_xijfe")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_l2j7u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
