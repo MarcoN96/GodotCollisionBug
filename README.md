@@ -8,3 +8,7 @@ Expected behaviour: only one Area2D's OnBodyEntered() function is triggered.
 Actual behaviour: all 4 Area2D's OnBodyEntered() function is triggered, then the other 3 Area2D's OnBodyExited() function is triggered.
 
 Pressing spacebar calls a reload function which frees the test scene and the test object and instantiates new ones. The wrong behaviour occurs again.
+
+Reproduceable in Godot Engine v4.2.1.stable.mono.official [b09f793f5]
+
+Feel free to clone the repo and play around with the code.
