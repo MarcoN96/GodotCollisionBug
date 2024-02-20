@@ -8,6 +8,7 @@ var obj
 @export var object: PackedScene
 
 func _ready():
+	print("GDScript version")
 	load_scene()
 
 func _process(_delta):
