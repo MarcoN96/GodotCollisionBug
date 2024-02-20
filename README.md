@@ -9,6 +9,6 @@ Actual behaviour: all 4 Area2D's OnBodyEntered() function is triggered, then the
 
 Pressing spacebar calls a reload function which frees the test scene and the test object and instantiates new ones. The wrong behaviour occurs again.
 
-Reproduceable in Godot Engine v4.2.1.stable.mono.official [b09f793f5]
+Reproduceable in Godot Engine v4.2.1.stable.mono.official [b09f793f5] and Godot Engine v4.3.dev3.mono.official [36e943b6b]
 
 Feel free to clone the repo and play around with the code.
